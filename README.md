@@ -6,7 +6,10 @@
 - Bootstrap styling
 - Maybe draggable like portfolios
 
-#### Notes to self
+---
+
+### Notes to self:
+
 generators i ran
 ```
 rails new hkennels -T --database=postgresql
