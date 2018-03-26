@@ -10,7 +10,7 @@
 
 ### Notes to self:
 
-generators i ran
+*starting generators i ran:*
 ```
 rails new hkennels -T --database=postgresql
 
@@ -22,7 +22,7 @@ rails generate paperclip post image
 
 ```
 
-created custom routes:
+*created custom routes:*
 ```
 Rails.application.routes.draw do
 
@@ -34,5 +34,15 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
 end
+```
+*getting devise working:*
+added devise gem
 
+```
+rails generate devise:install
+```
+follow instructions that come up,
+
+```
+rails generate devise User
 ```
