@@ -19,14 +19,12 @@
        <div class="cover-container">
 
           <%= render "shared/nav", location: 'top' %>
-
+          <%= yield %>
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
-
-          <%= yield %>
-
        </div>
      </div>
+
    </div>
   </body>
 </html>

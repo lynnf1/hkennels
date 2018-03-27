@@ -45,4 +45,8 @@ follow instructions that come up,
 
 ```
 rails generate devise User
+
+User.create!(email: "test1@test.com", password: "123456", password_confirmation: "123456", name: "NonAdmin")
+
 ```
+rails g migration AddTypeToUsers type:string
