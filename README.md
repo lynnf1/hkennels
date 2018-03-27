@@ -15,11 +15,12 @@
 rails new hkennels -T --database=postgresql
 
 rails g scaffold Post title:string body:text
+rails g scaffold Pup breed:string body:text price:decimal
 
 rails g controller Pages home about meetourdogs
 
 rails generate paperclip post image
-
+rails generate paperclip pup image
 ```
 
 *created custom routes:*

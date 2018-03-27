@@ -1,0 +1,16 @@
+<div class="card text-center">
+  <div class="card-header">
+    <%= @pup.breed %>
+  </div>
+  <div class="card-body">
+    <%= image_tag @pup.image.url(:large) %>
+    <h5 class="card-title">$ <%= @pup.price %> </h5>
+    <p class="card-text">   <%= @pup.body %></p>
+
+  </div>
+  <div class="card-footer text-muted">
+    <%= link_to 'Edit', edit_pup_path(@pup), class:"btn btn-primary"%>
+    <%= link_to 'Back', pups_path, class:"btn btn-warning" %>
+
+  </div>
+</div>

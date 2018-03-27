@@ -24,7 +24,7 @@ module ApplicationHelper
       title: 'Our Dogs'
     },
     {
-      url: litters_path,
+      url:pups_path,
       title: 'Litters & Puppies for sale'
     }
     ]
