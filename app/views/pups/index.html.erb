@@ -2,11 +2,16 @@
   <div class="container">
     <h1 class="display-4 font-italic">Puppies</h1>
     <p class="lead">If you are interested in any of the puppies give us a call at 123-456-9428</p>
+    <% if user_signed_in? %>
       <%= link_to 'New Puppy', new_pup_path, class: "btn btn-warning" %>
+    <% end %>
   </div>
+  </div
 </div>
+  <div class="container">
+    <div class="row">
 
-  <div class="card-deck">
+  <!-- <div class="card-deck"> -->
     <% @pups.unsold.each do |pup| %>
 
     <div class="card mb-3 bg-light" style="width: 18rem;">
@@ -15,8 +20,10 @@
         <h5 class="card-title"><%= pup.breed %></h5>
         <p class="card-text"><%= pup.body %></p>
         <p><%= link_to 'Look at me!', pup %>
-        <%= link_to 'Edit', edit_pup_path(pup) %>
-        <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <% if user_signed_in? %>
+          <%= link_to 'Edit', edit_pup_path(pup) %>
+          <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <% end %>
         <a href="#" class="btn btn-outline-warning"><%= pup.price %></a>
         <a href="#" class="btn btn-outline-danger">Call Us</a>
       </div>
@@ -36,14 +43,16 @@
           <h5 class="card-title"><%= pup.breed %></h5>
           <p class="card-text"><%= pup.body %></p>
           <p><%= link_to 'Look at me!', pup %>
-          <%= link_to 'Edit', edit_pup_path(pup) %>
-          <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          <% if user_signed_in? %>
+            <%= link_to 'Edit', edit_pup_path(pup) %>
+            <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <% end %>
           <a href="#" class="btn btn-outline-warning"><%= pup.price %></a>
           <a href="#" class="btn btn-outline-secondary">Call Us</a>
         </div>
       </div>
       <% end %>
 
-
     </div>
+  </div>
 </div>

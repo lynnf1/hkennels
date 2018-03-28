@@ -11,4 +11,5 @@ class Pup < ApplicationRecord
     where(tag:"Sold")
   end
 
+
 end

@@ -1,10 +1,10 @@
 <div class="card text-center">
-  <div class="card-header">
-      <%= @post.title %>
+  <div class="card-header mb-0">
+    <h3> <%= @post.title %> </h3>
   </div>
   <div class="card-body">
     <%= image_tag @post.image.url(:large) %>
-    <h5 class="card-title"></h5>
+    <h3 class="card-title mb-0"></h3>
     <p class="card-text">  <%= @post.body %> </p>
 
   </div>
