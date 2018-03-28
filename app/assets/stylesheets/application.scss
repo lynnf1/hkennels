@@ -16,16 +16,23 @@
  *= require_self
  */
 body {
-  background-color: #343A40;
+  background-color: white;
 }
 
  .dark {
-   background-color: #343A40;
+   background-color: #f6fcff;
  }
 
+ .lite {
+   background-color: white;
+ }
+ .lite-pad {
+   background-color: white;
+   padding: 30px;
+ }
 
 .nav-link {
-  color: white;
+  color: black;
 }
 
 .nav-link:hover{
@@ -33,10 +40,24 @@ body {
 }
 
 .lightgrey-pad {
-  background-color: #E9ECEF;
+  // background-color: #E9ECEF;
+  background-color: #ebf4f8;
   padding: 30px;
 }
 
 .small {
   padding: 10px;
+}
+
+.dark-text {
+  color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+
+.lightgrey {
+  background-color: #ebf4f8;
 }

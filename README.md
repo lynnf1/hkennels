@@ -21,6 +21,8 @@ rails g controller Pages home about meetourdogs
 
 rails generate paperclip post image
 rails generate paperclip pup image
+
+rails g migration AddTagToPup tag:string
 ```
 
 *created custom routes:*
