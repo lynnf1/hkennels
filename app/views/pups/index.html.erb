@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid small lightgrey">
   <div class="container">
     <h1 class="display-4 font-italic">Puppies</h1>
-    <p class="lead">If you are interested in any of the puppies give us a call at 123-456-9428</p>
+    <p class="lead">If you are interested in any of the puppies or have any questions, feel free to give us a call. </p>
     <% if user_signed_in? %>
       <%= link_to 'New Puppy', new_pup_path, class: "btn btn-warning" %>
     <% end %>
@@ -19,13 +19,13 @@
       <div class="card-body">
         <h5 class="card-title"><%= pup.breed %></h5>
         <p class="card-text"><%= pup.body %></p>
-        <p><%= link_to 'Look at me!', pup %>
+        <p><%= link_to 'Look at me!', pup , class: "btn btn-sm btn-outline-primary" %>
         <% if user_signed_in? %>
-          <%= link_to 'Edit', edit_pup_path(pup) %>
-          <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          <%= link_to 'Edit', edit_pup_path(pup), class: "btn btn-sm btn-outline-secondary" %>
+          <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-secondary" %></p>
         <% end %>
-        <a href="#" class="btn btn-outline-warning"><%= pup.price %></a>
-        <a href="#" class="btn btn-outline-danger">Call Us</a>
+        <a href="#" class="btn btn-sm btn-warning">$ <%= pup.price %></a>
+         <%= link_to 'Call us', about_path, class: 'btn btn-sm btn-danger' %>
       </div>
     </div>
     <% end %>
@@ -37,18 +37,16 @@
       <div class="card text-white bg-danger mb-3" style="width: 18rem;">
       <%= image_tag pup.image.url, class: "card-img-top" %>
         <div class="card-body">
-          <div class="alert alert-danger" role="alert">
-              Sorry I've been <strong>Sold</strong> !
-          </div>
           <h5 class="card-title"><%= pup.breed %></h5>
           <p class="card-text"><%= pup.body %></p>
-          <p><%= link_to 'Look at me!', pup %>
+          <p><%= link_to 'Look at me!', pup , class: "btn btn-sm btn-outline-light" %>
           <% if user_signed_in? %>
-            <%= link_to 'Edit', edit_pup_path(pup) %>
-            <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-            <% end %>
-          <a href="#" class="btn btn-outline-warning"><%= pup.price %></a>
-          <a href="#" class="btn btn-outline-secondary">Call Us</a>
+            <%= link_to 'Edit', edit_pup_path(pup), class: "btn btn-sm btn-outline-secondary" %>
+            <%= link_to 'Delete', pup, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-secondary" %></p>
+          <% end %>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Sorry I've been <strong>Sold</strong> !
         </div>
       </div>
       <% end %>
