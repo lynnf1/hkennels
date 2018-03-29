@@ -1,5 +1,6 @@
 <div class="card">
   <div class="card-header">
+          <div class="container">
     <h1>New Dog</h1>
 
     <%= form_for(post) do |form| %>
@@ -18,9 +19,9 @@
     <div class="form-group">
         <%= form.label :image %>
         <%= form.file_field :image , class: 'form-control'%>
-
+        <p></p>
       <div class="form-group">
-        <%= form.label :title %>
+        Dog's Name
         <%= form.text_field :title, id: :post_title , class: 'form-control'%>
       </div>
 
@@ -36,5 +37,6 @@
 
     </div>
   <% end %>
+</div>
   </div>
 </div>

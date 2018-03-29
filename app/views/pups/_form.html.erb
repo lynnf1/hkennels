@@ -1,7 +1,8 @@
 <div class="card">
   <div class="card-header">
-    <h1>New Puppy</h1>
 
+      <div class="container">
+            <h1>List A Puppy</h1>
     <%= form_with(model: pup, local: true) do |form| %>
       <% if pup.errors.any? %>
         <div id="error_explanation">
@@ -18,15 +19,13 @@
       <div class="form-group">
           <%= form.label :image %>
           <%= form.file_field :image , class: 'form-control'%>
-          
-      <div class="form-group">
-        <%= form.label :tag %>
-        <%= form.text_field :tag, id: :pup_tag, class: 'form-control'%>
       </div>
-
+      <div class="btn-group">
+        <%= form.select(:tag, Pup::TAGOPTS)%>
+      </div>
+      <p> </p>
       <div class="form-group">
-        <%= form.label :breed %>
-        <%= form.text_field :breed, id: :pup_breed, class: 'form-control'%>
+        <%= form.select(:breed, Pup::BREEDOPTS) %>
       </div>
 
       <div class="form-group">
@@ -46,4 +45,5 @@
     </div>
     <% end %>
   </div>
+</div>
 </div>
