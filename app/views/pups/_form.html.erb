@@ -1,9 +1,8 @@
 <div class="card">
   <div class="card-header">
-
       <div class="container">
-            <h1>List A Puppy</h1>
-    <%= form_with(model: pup, local: true) do |form| %>
+    <h1>List A Puppy</h1>
+      <%= form_with(model: pup, local: true) do |form| %>
       <% if pup.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(pup.errors.count, "error") %> prohibited this pup from being saved:</h2>
@@ -43,7 +42,7 @@
         <%= link_to 'Back', pups_path, class:"btn btn-warning" %>
       </div>
     </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-</div>
 </div>
