@@ -3,7 +3,7 @@ class Pup < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/s
 
   TAGOPTS = ['Sold', 'Unsold']
-  BREEDOPTS = ['Dashound', 'German Shepard']
+  BREEDOPTS = ['Dachshund', 'German Shepard']
 
   def self.unsold
     where(tag:"Unsold")

@@ -3,9 +3,35 @@
 body {
   background-color: white;
 }
+h1 {
+    font-family: 'Knewave', cursive;
+}
+p {
+    font-family: 'Song Myung', serif;
+}
+img {
+  transition: all .5s;
+}
 
+
+
+.likep {
+    font-family: 'Song Myung', serif;
+    color: #4f4f4f;
+}
+.likep:hover {
+    font-family: 'Song Myung', serif;
+    color: black;
+}
+.likeh1 {
+    font-family: 'Knewave', cursive;
+}
+.dogtitle {
+    font-family: 'Knewave', cursive;
+    font-size: 1.3em;
+}
  .dark {
-   background-color: #f6fcff;
+   background-color: #f4fbff;
  }
 
  .lite {
@@ -16,6 +42,9 @@ body {
    padding: 30px;
  }
 
+.phover:hover {
+  transform: scale(1.1);
+}
 .nav-link {
   color: black;
 }
@@ -54,3 +83,9 @@ body {
 .redalert {
   color: red;
 }
+
+.flipInX {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+}
+

@@ -1,17 +1,17 @@
 
 
-User.create!(name: "Linsey Falkner",email: 'test@test.com',password: '123456',password_confirmation: '123456')
+User.create!(name: "Linsey F",email: 'test1@test.com',password: '123456',password_confirmation: '123456')
 p "1 user made"
 
 1.times do |pup|
   Pup.create(breed: "German Shepard", body: "1 month old", price: 100, tag: "Unsold", image_file_name: "gmpup2.jpg", image_content_type: "image/jpeg")
 end
 4.times do |pup|
-  Pup.create(breed: "Dashound", body: "1 month old", price: 300, tag: "Unsold", image_file_name: "pup1.jpg", image_content_type: "image/jpeg")
+  Pup.create(breed: "Dachshund", body: "1 month old", price: 300, tag: "Unsold", image_file_name: "pup1.jpg", image_content_type: "image/jpeg")
 end
 
 2.times do |pup|
-  Pup.create!(breed: "Dashound", body: "1 month old", price: 300, tag: "Sold", image_file_name: "pup1.jpg", image_content_type: "image/jpeg")
+  Pup.create!(breed: "Dachshund", body: "1 month old", price: 300, tag: "Sold", image_file_name: "pup1.jpg", image_content_type: "image/jpeg")
 end
 
 p "All puppies have formed"
