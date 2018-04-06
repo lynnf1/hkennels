@@ -8,5 +8,5 @@ This is a application created for my grandparents so that they would easily be a
 - Upload puppies  with crud functionality
 - Ability to mark individual puppies as sold or for sale
 - Bootstrap styling
-
-Done!
+- Change storage of images to AWS..
+- Flesh out the user system to be better.

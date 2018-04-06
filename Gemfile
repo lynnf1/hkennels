@@ -57,3 +57,5 @@ gem 'paperclip', '~> 5.1'
 gem 'bootstrap', '~> 4.0.0'
 
 gem 'devise', '~> 4.2'
+
+gem 'aws-sdk-s3'
