@@ -25,4 +25,6 @@ Devise.setup do |config|
 
   config.sign_out_via = :delete
 
+  config.secret_key = '62027be38ac95ddf4aa58ededbfbb6766f3d7ba603991d2a9e1ad62ff4180d5802e1811ac10303e3cac2049b19ec6afed6afd0db71e74c2e880d162f70735b06'
+
 end
