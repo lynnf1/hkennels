@@ -36,7 +36,7 @@
       <% @pups.sold.each do |pup| %>
 
       <div class="card text-white bg-danger mb-3" style="width: 15rem;">
-      <%= image_tag pup.image.url, class: "card-img-top" %>
+        <%= image_tag pup.photo, width: '100%', class: "card-img-top"  %>
         <div class="card-body">
           <h5 class="card-title"><%= pup.breed %></h5>
           <p class="card-text"><%= pup.body %></p>

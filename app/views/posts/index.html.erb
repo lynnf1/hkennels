@@ -16,7 +16,7 @@
     <% @posts.each do |post| %>
     <div class="col-md-4">
       <div class="card mb-4 box-shadow">
-        <%= link_to (image_tag post.image.url, class: "phover card-img-top"), post  %>
+         <%= link_to (image_tag post.photo, class: "phover card-img-top"), post  %>
         <div class="card-body dark">
           <strong class="dogtitle"><%= post.title.upcase %></strong>
           <p class="card-text"><%= post.body %></p>

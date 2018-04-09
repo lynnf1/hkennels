@@ -3,7 +3,7 @@
     <%= @pup.breed %>
   </div>
   <div class="card-body">
-    <%= image_tag @pup.image.url(:large) %>
+   <%= image_tag @pup.photo, width: '100%' %>
     <h5 class="card-title">$ <%= @pup.price %> </h5>
     <p class="card-text">   <%= @pup.body %></p>
 
