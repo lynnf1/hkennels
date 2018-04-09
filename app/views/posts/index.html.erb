@@ -18,7 +18,7 @@
       <div class="card mb-4 box-shadow">
         <%= link_to (image_tag post.image.url, class: "phover card-img-top"), post  %>
         <div class="card-body dark">
-          <strong class="dogtitle"><%= post.title %></strong>
+          <strong class="dogtitle"><%= post.title.upcase %></strong>
           <p class="card-text"><%= post.body %></p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
