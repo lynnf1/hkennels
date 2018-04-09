@@ -67,3 +67,5 @@ gem 'mini_magick', '~> 4.8'
 gem 'dotenv', '~> 2.2', '>= 2.2.1'
 
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+
+gem 'paperclip', '~> 5.1'
